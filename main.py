@@ -7,3 +7,22 @@
 # game continuously, 2. A menu bar with 2-3 story templates to choose from, 3. color-coded words to
 # differentiate the user-input words from the story script.
 
+
+
+
+def story1():
+    blue = "\033[0;34m"
+    end = "\033[0m"
+
+    adj = blue + input('Adjective: ') + end
+    animal = blue + input('Animal: ') + end
+    country = blue + input('Country: ') + end
+    name = blue + input('Name: ') + end
+    foods = blue + input('Foods (plural): ') + end
+
+    story1 = f'''There once was a {adj} {animal} named, {name}. It lived in the country {country}, and for all its life it
+    had always grazed on {foods}.'''
+    print(story1)
+
+
+story1()
