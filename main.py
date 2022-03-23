@@ -12,6 +12,11 @@ def story1():
     blue = "\033[0;34m"
     end = "\033[0m"
 
+    print('\nLet\'s get started!')
+    time.sleep(1)
+    print('Please add some of your own words to make this story uniquely your own ...\n')
+    time.sleep(1)
+
     adj = blue + input('Adjective: ') + end
     animal = blue + input('Animal: ') + end
     country = blue + input('Country: ') + end
@@ -27,6 +32,11 @@ def story2():
     blue = "\033[0;34m"
     end = "\033[0m"
 
+    print('\nLet\'s get started!')
+    time.sleep(1)
+    print('Please add some of your own words to make this story uniquely your own ...\n')
+    time.sleep(1)
+
     adj = blue + input('Adjective: ') + end
     animal = blue + input('Animal: ') + end
     country = blue + input('Country: ') + end
@@ -41,6 +51,11 @@ def story2():
 def story3():
     blue = "\033[0;34m"
     end = "\033[0m"
+
+    print('\nLet\'s get started!')
+    time.sleep(1)
+    print('Please add some of your own words to make this story uniquely your own ...\n')
+    time.sleep(1)
 
     adj = blue + input('Adjective: ') + end
     animal = blue + input('Animal: ') + end
