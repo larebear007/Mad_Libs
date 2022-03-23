@@ -7,6 +7,7 @@
 # game continuously, 2. A menu bar with 2-3 story templates to choose from, 3. color-coded words to
 # differentiate the user-input words from the story script.
 
+
 def story1():
     blue = "\033[0;34m"
     end = "\033[0m"
