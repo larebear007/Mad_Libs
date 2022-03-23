@@ -7,9 +7,6 @@
 # game continuously, 2. A menu bar with 2-3 story templates to choose from, 3. color-coded words to
 # differentiate the user-input words from the story script.
 
-
-
-
 def story1():
     blue = "\033[0;34m"
     end = "\033[0m"
@@ -20,9 +17,74 @@ def story1():
     name = blue + input('Name: ') + end
     foods = blue + input('Foods (plural): ') + end
 
-    story1 = f'''There once was a {adj} {animal} named, {name}. It lived in the country {country}, and for all its life it
+    story_1 = f'''There once was a {adj} {animal} named, {name}. It lived in the country {country}, and for all its life it
     had always grazed on {foods}.'''
-    print(story1)
+    print(story_1)
 
 
-story1()
+def story2():
+    blue = "\033[0;34m"
+    end = "\033[0m"
+
+    adj = blue + input('Adjective: ') + end
+    animal = blue + input('Animal: ') + end
+    country = blue + input('Country: ') + end
+    name = blue + input('Name: ') + end
+    foods = blue + input('Foods (plural): ') + end
+
+    story_2 = f'''There once was a {adj} {animal} named, {name}. It lived in the country {country}, and for all its life it
+        had always grazed on {foods}.'''
+    print(story_2)
+
+
+def story3():
+    blue = "\033[0;34m"
+    end = "\033[0m"
+
+    adj = blue + input('Adjective: ') + end
+    animal = blue + input('Animal: ') + end
+    country = blue + input('Country: ') + end
+    name = blue + input('Name: ') + end
+    foods = blue + input('Foods (plural): ') + end
+
+    story_3 = f'''There once was a {adj} {animal} named, {name}. It lived in the country {country}, and for all its life it
+        had always grazed on {foods}.'''
+    print(story_3)
+
+
+import time
+
+while True:
+    print('Hello! Welcome to Mad Libs!')
+    time.sleep(1)
+    print('To get started, please choose your story ...\n')
+    time.sleep(1)
+    print('OPTION 1: The Unexpected Fruit of No Labor')
+    time.sleep(1)
+    print('OPTION 2: Something')
+    time.sleep(1)
+    print('OPTION 3: something')
+    time.sleep(1)
+    while True:
+            story = input('Please enter 1, 2, or 3 for your story choice: ')
+            if story == '1':
+                story1()
+                break
+            if story == '2':
+                story2()
+                break
+            if story == '3':
+                story3()
+                break
+            else:
+                print('Please enter the number 1, 2, or 3 as your story option. No funny business!')
+                continue
+
+    restart = input('Thanks for playing Mad Libs! Would you like to play again? ')
+    if restart.lower() == 'yes':
+        print('\n')
+        continue
+    else:
+        print('\nCome back any time!')
+        break
+quit()
