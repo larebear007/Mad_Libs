@@ -26,7 +26,7 @@ def story1():
     foods = blue + input('Foods (plural): ') + end
 
     story_1 = f'''\nThere once was a {adj} {animal} named, {name}. It lived in the country {country}, 
-and for all its life it had always grazed on {foods}.'''
+and for all its life it always grazed on {foods}. How peaceful . . . yet boring. The end.'''
     print('Generating story ...')
     time.sleep(3)
     for letter in story_1:
@@ -43,14 +43,17 @@ def story2():
     print('Please add some of your own words to make this story uniquely your own ...\n')
     time.sleep(1)
 
+    noun = blue + input('Noun: ') + end
+    name1 = blue + input('Name: ') + end
     adj = blue + input('Adjective: ') + end
-    animal = blue + input('Animal: ') + end
-    country = blue + input('Country: ') + end
-    name = blue + input('Name: ') + end
-    foods = blue + input('Foods (plural): ') + end
+    place = blue + input('Place (plural): ') + end
+    name2 = blue + input('Another name: ') + end
 
-    story_2 = f'''There once was a {adj} {animal} named, {name}. It lived in the country {country}, 
-and for all its life it had always grazed on {foods}.'''
+    story_2 = f'''\nOnce there was a {noun} named {name1}. {name1} lived in a big {adj} 
+house with its grandmother {name2}. One day the {noun} {name1} and {noun} Grandma {name2} 
+wanted to go out. \"Where do you want to go today, {name1}?\", asked Grandma {name2}. 
+\"I want to go to {place},\" said {name1}. And then they did go to {place}. 
+They surely, surely did.'''
     print('Generating story ...')
     time.sleep(3)
     for letter in story_2:
@@ -67,17 +70,20 @@ def story3():
     print('Please add some of your own words to make this story uniquely your own ...\n')
     time.sleep(1)
 
-    adj = blue + input('Adjective: ') + end
-    animal = blue + input('Animal: ') + end
-    country = blue + input('Country: ') + end
+    happyplace = blue + input('Happy place: ') + end
+    homeplace = blue + input('Place in a home: ') + end
+    plang1 = blue + input('Programming Language: ') + end
     name = blue + input('Name: ') + end
-    foods = blue + input('Foods (plural): ') + end
+    plang2 = blue + input('Another programming language: ') + end
 
-    story_3 = f'''There once was a {adj} {animal} named, {name}. It lived in the country {country}, 
-and for all its life it had always grazed on {foods}.'''
+    story_3 = f'''\nThere once was a coder named {name}. {name} was such a hacker, and {name} 
+just coded and learned, and couldn't be stopped. First, {name} learned {plang1}. Then {name} 
+learned {plang2}. After that {name} felt like they deserved a reward, so they went to 
+{happyplace}. But as they were getting ready, they were so tired that they fell asleep, 
+right there in their {homeplace}. EL FIN!'''
     print('Generating story ...')
     time.sleep(3)
-    for letter in story_1:
+    for letter in story_3:
         print(letter, end='')
         time.sleep(.09)
 
@@ -91,24 +97,24 @@ while True:
     time.sleep(1)
     print('OPTION 1: The Unexpected Fruit of No Labor')
     time.sleep(1)
-    print('OPTION 2: Something')
+    print('OPTION 2: Grandma')
     time.sleep(1)
-    print('OPTION 3: something')
+    print('OPTION 3: A True Exhaustion Story')
     time.sleep(1)
     while True:
-            story = input('Please enter 1, 2, or 3 for your story choice: ')
-            if story == '1':
-                story1()
-                break
-            if story == '2':
-                story2()
-                break
-            if story == '3':
-                story3()
-                break
-            else:
-                print('Please enter the number 1, 2, or 3 as your story option. No funny business!')
-                continue
+        story = input('Please enter 1, 2, or 3 for your story choice: ')
+        if story == '1':
+            story1()
+            break
+        if story == '2':
+            story2()
+            break
+        if story == '3':
+            story3()
+            break
+        else:
+            print('Please enter the number 1, 2, or 3 as your story option. No funny business!')
+            continue
 
     restart = input('\n\nThanks for playing Mad Libs! Would you like to play again? ')
     if restart.lower() == 'yes' or restart.lower() == 'y':
