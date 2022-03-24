@@ -1,2 +1,15 @@
 There once was a {adj* *anim* named, *name*. It lived in the country *country*, and for all its life it
 had always grazed on *foods*.
+
+
+adj = blue + input('Adjective: ') + end
+    animal = blue + input('Animal: ') + end
+    country = blue + input('Country: ') + end
+    name = blue + input('Name: ') + end
+    foods = blue + input('Foods (plural): ') + end
+
+    story_1 = f'''There once was a {adj} {animal} named, {name}. It lived in the country {country},
+and for all its life it
+had always grazed on {foods}.'''
+
+print(st

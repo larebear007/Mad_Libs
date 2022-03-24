@@ -9,6 +9,8 @@
 
 
 def story1():
+    import time
+
     blue = "\033[0;34m"
     end = "\033[0m"
 
@@ -23,9 +25,13 @@ def story1():
     name = blue + input('Name: ') + end
     foods = blue + input('Foods (plural): ') + end
 
-    story_1 = f'''There once was a {adj} {animal} named, {name}. It lived in the country {country}, and for all its life it
-    had always grazed on {foods}.'''
-    print(story_1)
+    story_1 = f'''\nThere once was a {adj} {animal} named, {name}. It lived in the country {country}, 
+and for all its life it had always grazed on {foods}.'''
+    print('Generating story ...')
+    time.sleep(3)
+    for letter in story_1:
+        print(letter, end='')
+        time.sleep(.09)
 
 
 def story2():
@@ -43,9 +49,13 @@ def story2():
     name = blue + input('Name: ') + end
     foods = blue + input('Foods (plural): ') + end
 
-    story_2 = f'''There once was a {adj} {animal} named, {name}. It lived in the country {country}, and for all its life it
-        had always grazed on {foods}.'''
-    print(story_2)
+    story_2 = f'''There once was a {adj} {animal} named, {name}. It lived in the country {country}, 
+and for all its life it had always grazed on {foods}.'''
+    print('Generating story ...')
+    time.sleep(3)
+    for letter in story_2:
+        print(letter, end='')
+        time.sleep(.09)
 
 
 def story3():
@@ -63,9 +73,13 @@ def story3():
     name = blue + input('Name: ') + end
     foods = blue + input('Foods (plural): ') + end
 
-    story_3 = f'''There once was a {adj} {animal} named, {name}. It lived in the country {country}, and for all its life it
-        had always grazed on {foods}.'''
-    print(story_3)
+    story_3 = f'''There once was a {adj} {animal} named, {name}. It lived in the country {country}, 
+and for all its life it had always grazed on {foods}.'''
+    print('Generating story ...')
+    time.sleep(3)
+    for letter in story_1:
+        print(letter, end='')
+        time.sleep(.09)
 
 
 import time
@@ -96,8 +110,8 @@ while True:
                 print('Please enter the number 1, 2, or 3 as your story option. No funny business!')
                 continue
 
-    restart = input('Thanks for playing Mad Libs! Would you like to play again? ')
-    if restart.lower() == 'yes':
+    restart = input('\n\nThanks for playing Mad Libs! Would you like to play again? ')
+    if restart.lower() == 'yes' or restart.lower() == 'y':
         print('\n')
         continue
     else:
